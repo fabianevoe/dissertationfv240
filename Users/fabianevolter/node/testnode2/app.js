@@ -10,9 +10,7 @@ var Swal = require('sweetalert2')
 //Database
 var mongo = require('mongodb');
 var monk = require('monk');
-//var db = monk('localhost:27017/nodetest2');
-var db = mongo(process.env.'localhost:27017/nodetest2', {native_parser:true});
-
+var db = monk('localhost:27017/nodetest2');
 
 var app = express();
 
