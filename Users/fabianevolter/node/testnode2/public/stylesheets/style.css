@@ -23,23 +23,19 @@ ul li{ 
 }
 
 #wrapper2 {
-	padding-top: 2em;
-    padding-right: 4em;
-    width: 55vw;
-    margin: 0 0 0 0;
+	margin-top: 5em;
+    width: 30vw;
+    margin-right: 10em;
 }
-
-
 
 #wrapper1 {
-	padding-left: 4em;
-	padding-top: 3em;
-	width: 45vw;
+	margin-top: 3em;
+	margin-left: 10em;
+	width: 70vw;
 }
 
 
-
-#wrapper1, #wrapper2, #wrapper3 {
+#wrapper1, #wrapper2 {
 	align-content: center;
 }
 
@@ -61,15 +57,14 @@ ul li{ 
 .tabletop {
 	display: flex;
 	justify-content: space-between;
-	margin-right: 30px;
-	font-weight:bold;
+	margin-right: 230px;
 }
 
 
 
 #userList {
 	margin:0 0 30px 0;
-	height: 430px;
+	height: 370px;
 	overflow-y: scroll;
 
 }
@@ -110,26 +105,26 @@ ul li{ 
 			} 
 
 #logocompany { 
-	width: 30%;
-	margin-left: 550px;
-	padding-left: 210px;
+	width: 50%;
+	margin-right: 2em;
+	margin-left: 200px;
 	text-align: right;
-
 }
 
-#logotext{ 
-	width: 30%;
-	margin-left: 600px;
-	text-align: right;
- }
+#logotext {
+	width: 50%;
+	text-align: left;
+	margin-right: 2em;
+	margin-left: 200px;
+}
 
-#logolink{ 
-	width: 30%;
-	margin-left: 600px;
-	text-align: right;
-	margin-bottom: 20px;
+#logolink {
+	width: 50%;
+	text-align: left;
+	margin-right: 2em;
+	margin-left: 200px;
+}
 
- }
 
 #userInfo {
 	width:250px;
@@ -144,23 +139,6 @@ ul li{ 
 		color: black;
 	}
 
-#logocompany {
-	width: 30%;
-	margin-left: 360px;
-	text-align: right;
-}
-
-#logotext{
-		width: 200px;
-		margin-left: 375px;
-		float: right;
-}
-
-#logolink{
-	width: 200px;
-	margin-left: 375px;
-	float: right;
-}
 
 #addUser p {
 	width: 400px;
