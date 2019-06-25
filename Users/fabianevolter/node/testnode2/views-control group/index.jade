@@ -1,0 +1,102 @@
+extends layout
+
+block content
+  #wrapper1
+    h1= title
+    p Welcome to the joint blockchain of Manufacturer Inc. and Supplier Inc.
+
+    // USER INFO
+    #userInfo
+      h2 Order Details
+      p
+        strong ID Number:
+        |  <span id='userIdNumber'></span>
+        br
+        br
+        strong Date:
+        |  <span id='userInfoName'></span>
+        br
+        br
+        strong Product:
+        |  <span id='userInfoAge'></span>
+        br
+        br
+        strong Quantity:
+        |  <span id='userInfoGender'></span>
+        br
+        br
+        strong Price:
+        |  <span id='userInfoLocation'></span>
+        br
+        br
+        strong Fullfillment Date:
+        |  <span id='userInfoQuantity'></span>
+        br
+        br
+        strong Location:
+        |  <span id='userInfoEmail'></span>
+    // /PRODUCT INFO
+  // / wrapper1
+
+  // Wrapper
+  #wrapper2
+
+    // ADD CONTRACT 
+    h2 Add a new order to the ledger
+    #addUser
+      fieldset
+        input#inputUserName(type='text', placeholder='Date (DD-MM-YYYY)')
+        input#inputUserEmail(type='text', placeholder='Product')
+        br
+        input#inputUserFullname(type='text', placeholder='Quantity')
+        input#inputUserAge(type='text', placeholder='Price per item')
+        br
+        input#inputUserLocation(type='text', placeholder='Fullfillment Date (DD-MM-YYYY)')
+        input#inputUserGender(type='text', placeholder='Location')
+        br
+        button#btnAddUser Add Order
+        #success
+    // /ADD PRODUCT
+    // USER LIST
+    .tabletop
+      h2 Orders on the ledger
+      #count
+    #userList
+      table
+        thead
+          th Date
+          th ID
+          th Product
+          th Qty
+          th Price
+          th Fullfullment Date
+          th User
+        tbody
+    // /PRODUCT LIST
+
+
+  // / wrapper2
+
+  //wrapper 3
+  #wrapper3
+   
+    img#logocompany(src="/images/Download.png" alt="Logo")
+    p#logotext This implementation is based on IBM's blockchain guide. 
+    a#logolink(href="https://developer.ibm.com/technologies/blockchain/", target="_blank") See here for information. 
+
+     // Inf BOX
+    #infobox
+    h2 Important Information
+    h3 Please read carefully before usage
+    ul#informationlist
+      li This system is a distributed ledger implementation. 
+      li If you add an order, a window will appear in case the order has successfully been requested
+      li The order then is subject to acceptance by the Supplier - as soon as he accepts, it is added to the ledger.
+      li Supplier Inc. usually has a very fast response time - if your order does not appear on the ledger within five minutes, there might have been a problem.
+      li An order which is added to the ledger cannot be changed or deleted as it is saved on all nodes. 
+      li Note that your colleguages also are working with the ledger - you might see entries added as you are interacting with it
+  // / wrapper3
+
+
+
+

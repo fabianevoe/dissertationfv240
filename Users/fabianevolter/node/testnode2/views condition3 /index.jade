@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  #wrapper1
+    h1= title
+    p Welcome to the joint blockchain of Manufacturer Inc. and Supplier Inc.
+
+    // ADD CONTRACT 
+    #addtop 
+    h2 Add a new order to the ledger
+    #addUser
+      fieldset
+        input#inputUserName(type='text', placeholder='Date (DD-MM-YYYY)')
+        input#inputUserEmail(type='text', placeholder='Product')
+        br
+        input#inputUserFullname(type='text', placeholder='Quantity')
+        input#inputUserAge(type='text', placeholder='Price per item')
+        br
+        input#inputUserLocation(type='text', placeholder='Fullfillment Date (DD-MM-YYYY)')
+        input#inputUserGender(type='text', placeholder='Location')
+        br
+        button#btnAddUser Add Order
+        #success
+    // /ADD PRODUCT
+
+  #wrapper2
+    img#logocompany(src="/images/Download.png" alt="Logo")
+    p#logotext This implementation is based on IBM's blockchain guide. 
+    a#logolink(href="https://developer.ibm.com/technologies/blockchain/", target="_blank") See here for information. 
+    
+
+
+
+
+

@@ -1,0 +1,70 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to your local blockchain
+
+  // Wrapper
+  #wrapper
+
+    // INFO BOX
+    #infobox
+    h2 This is to inform you 
+    p  what is happening BLA BLA BLA
+
+    // PRODUCT INFO
+    #userInfo
+      h2 Product Info
+      p
+        strong Name:
+        |  <span id='userInfoName'></span>
+        br
+        strong Age:
+        |  <span id='userInfoAge'></span>
+        br
+        strong Gender:
+        |  <span id='userInfoGender'></span>
+        br
+        strong Location:
+        |  <span id='userInfoLocation'></span>
+        br
+        strong Quantity:
+        |  <span id='userInfoQuantity'></span>
+    // /PRODUCT INFO
+
+    // PRODUCT LIST
+    h2 Product List
+    #userList
+      table
+        thead
+          th UserName
+          th Email
+          th Quantity
+          th Delete?
+        tbody
+    // /PRODUCT LIST
+
+    // ADD PRODUCT
+    h2 Add Product
+    #addUser
+    p Note: If you add a product it will stay on the blockchain forever - undeletable
+      fieldset
+        input#inputUserName(type='text', placeholder='Username')
+        input#inputUserEmail(type='text', placeholder='Email')
+        br
+        input#inputUserFullname(type='text', placeholder='Full Name')
+        input#inputUserAge(type='text', placeholder='Age')
+        br
+        input#inputUserLocation(type='text', placeholder='Location')
+        input#inputUserGender(type='text', placeholder='gender')
+        br
+        button#btnAddUser Add User
+    p If you add a product it will stay on the blockchain forever - undeletable
+    // /ADD PRODUCT
+
+    // Wrapper
+  #wrapper
+
+
+
+

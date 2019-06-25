@@ -1,0 +1,202 @@
+body {
+  font: 14px "Latha", Helvetica, Arial, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+h2 {
+	margin:0 0 .5em 0;
+}
+
+a {
+  color: black;
+}
+
+ul li{ 
+	list-style-position: inside;
+    text-indent: -1em;
+    padding-left: 1em;
+    font-size: 14px
+}
+
+#wrapper2 {
+	padding-top: 10em;
+	padding-left: 30px;
+    padding-right: 30px;
+    width: 40vw;
+
+}
+
+#wrapper3 {
+	padding-top: 1em;
+	width: 35vw;
+}
+
+#wrapper1 {
+	padding-left: 4em;
+	padding-top: 2em;
+	width: 25vw;
+}
+
+#wrapper3{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vw
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#wrapper1, #wrapper2, #wrapper3 {
+	align-content: center;
+}
+
+#infobox {
+	margin:100px 0 0 0;
+	float: right;
+	border:1px solid black;
+	align-items: center;
+	align-content: center;
+	display: flex;
+	line-height: 200%; 
+}
+	#infobox p {
+		border:1px solid black;
+		padding: 10px;
+		line-height: 200%; 
+	}
+
+.tabletop {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+#userList {
+	margin:0 0 30px 0;
+	height: 370px;
+	overflow-y: scroll;
+
+}
+	#userList table {
+		border-collapse:separate;
+		border-spacing:1px;
+		background:#CCC;
+	}
+		#userList table th {
+			background:#EEE;
+			font-weight:600;
+			padding:10px ;
+			text-align:center;
+		}
+		#userList table tbody {
+			padding:0; margin:0;
+			border-collapse:collapse;
+			width: auto; 
+
+		}
+		#userList table tr:nth-child(even) {
+			background-color: black;
+			} 
+
+		#userList table tbody:nth-child(even) {
+			background-color: #85A2B0;
+		} 
+			#userList table td {
+				background:#FFF;
+				padding:5px;
+				text-align:center;
+			}
+			#userList table td:nth-child(odd) {
+			background-color: #f2f2f2;
+			} 
+
+
+#userInfo {
+	width:250px;
+	top:0; left:0;
+	margin-top: 2em;
+}
+	#userInfo p {
+		padding:15px;
+		border:1px solid black;
+		background: white;
+		color: black;
+	}
+
+#logocompany {
+	width: 30%;
+	margin-left: 360px;
+	text-align: right;
+}
+
+#logotext{
+		width: 200px;
+		margin-left: 375px;
+		float: right;
+}
+
+#logolink{
+	width: 200px;
+	margin-left: 375px;
+	float: right;
+}
+
+#addUser p {
+	width: 400px;
+	color: black;
+	}
+
+#btn {
+	margin: 40px 0 30px 0;
+	background-color: #A4BAC5;
+}
+
+#informationlist{
+	margin: 0 30px 0 30px;
+	line-height: 200%;
+	padding: 5px;
+	border:1px solid black;
+	list-style-position: inside;
+	background: white;
+	list-style-type: disc;
+	color: black;
+	padding-bottom: 80px
+}
+	#informationlist li{
+		list-style-type: disc;
+		list-style-position: inside;
+		}
+
+fieldset {
+	border:0;
+	margin:0 0 30px 0;
+	width: 400px;
+	color: black;
+	font-size: 14px;
+}
+	fieldset input{
+	background-color:#f2f2f2;
+	font-size: 14px;
+	}
+
+::-webkit-input-placeholder{
+	color: black;
+	font-size: 14px;
+}
+
+#inputUserName{
+	color: black;
+	}
+
+#inputUserGender{
+	margin-bottom: 14px;
+}
+
+input {
+	width: -webkit-fill-available;
+	margin-bottom: 2px;
+}
