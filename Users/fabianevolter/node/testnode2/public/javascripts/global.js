@@ -97,9 +97,15 @@ function addUser(event) {
 
   //Check and make sure errorCount's still at zero
   if (errorCount === 0) {
+  alert(
+        'Order requested successfully.'
+        );
 
 
+  // Clear the form inputs
+  $('#addUser fieldset input').val('');  
 
+/*
    //If it is, compile all user info into one object
     var newUser = {
       'idnumber': $('#addUser fieldset input#inputID').val(),
@@ -139,10 +145,8 @@ function addUser(event) {
         // If something goes wrong, alert the error message that the service returned
         alert('Error: ' + response.msg)
       }
-    });
-    alert(
-          'Order requested successfully.'
-        );
+    });*/
+    
 
   }
   else {
