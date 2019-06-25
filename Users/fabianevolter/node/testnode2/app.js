@@ -3,17 +3,14 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var Swal = require('sweetalert2');
+var Swal = require('sweetalert2')
 
 
 
 //Database
-/*var mongo = require('mongodb');
+var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('localhost:27017/nodetest2');*/
-
-var mongoose = require(‘mongoose’);
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/nodetest2');
+var db = monk('localhost:27017/nodetest2');
 
 var app = express();
 
@@ -54,8 +51,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-const port = process.env.PORT || 3000;
-app.listen(port);
 
 module.exports = app;
